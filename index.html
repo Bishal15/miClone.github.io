@@ -1,0 +1,1064 @@
+
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+           
+        <style type="text/css">
+            body{
+                margin-top: 0px; 
+                margin-bottom: 0px; 
+                margin-left: 0px; 
+                margin-right: 0px;
+                padding: 0;
+            }
+            
+            #topbar{
+                width:100%;
+                height:42px;
+                background-color: #212121;
+                font-size:70%;
+                padding-top: 0px;
+            }
+            #topelements{
+                padding: 4px 20px 10px 30px;
+            }
+            #topelements ul{
+                list-style: none;
+            }
+            #topelements1{
+                display: inline-flex;
+                height: 10px;
+            }
+            #topelements1 li a{
+                text-decoration: none;
+                color: darkgray;
+            }
+            #topelements1 li a:hover{
+                color: white;
+            } 
+            #topelements  ul li{
+                padding-right: 20px;
+                padding-left: 20px;
+                position: relative;
+                top: 10px;
+                bottom: -5px;
+                border-right: 1px solid  gray;
+            }
+            #retails{
+                border: none !important;
+            }
+            #retails:hover{
+                background-color: white;
+                height:60px !important;
+                margin-top: -20px;
+                padding-top: 20px;
+            }
+            #retails a:hover{
+                color: orangered !important;
+            }
+            #stores{
+                display: none;
+            }
+            #topelements ul li:hover #stores{
+                background-color: white;
+                display:block;
+                position: absolute;
+                margin-top: 11px;
+                width: 200px;
+                height: 102px;
+                border-right: none;
+            }
+            #topelements ul li:hover #stores ul{
+                display:block;
+                margin-bottom: 5px;
+            }
+            #topelements ul li:hover #stores ul li{
+                 margin-left: -40px;
+                display:block;
+                border-right: none;
+                padding: 10px 10px 5px 10px;
+            }
+            #topelements ul li:hover #stores ul li a{
+                text-decoration: none;
+                color: black;
+            }
+            #topelements ul li:hover #stores ul li:hover{
+                background-color: #F5F5F5;
+                color: orangered;
+            }
+                        
+            #topelements ul li:hover #stores ul li a:hover{
+                color: orangered;
+            }
+            #magnify{
+                float: right;
+                position: absolute;
+                right:140px;
+                top: 75px;
+            }
+            #signin{
+                margin-left: 400px;
+            }
+            #cart{
+                border-right: none !important;
+            }
+            #midbar{
+                background-color: white;
+                opacity: 100;
+                margin-left: 70px;
+                width:1000px;
+                height:100px;
+            }
+            .search{
+                border:none;
+                border-bottom: 1px solid grey;
+                margin-top: -55px;
+                margin-left: -30px;
+                width: 220px;
+                padding-left: 5px;
+                position:absolute;
+                left: 995px;
+                top: 125px;
+                font-size: 90%;
+                font-weight: lighter;
+            }
+            
+            #milogo{
+                margin: 23px 0px 20px 0px;
+                float:left;
+            }
+            #midbarelements ul{
+                display: inline-flex;
+                list-style: none;
+                background-color: white;
+            }
+            #midbarelements ul li{
+                margin-top:40px;
+                padding: 0px 20px 0px 20px;
+                font-size: 80%;
+                font-weight: bold;
+                font-family:inherit;
+            }
+            #midbarelements ul li a{
+                text-decoration: none;
+                color:gray;
+            }
+            #midbarelements ul li a:hover{
+                color:orangered;
+            }
+            #submenu1{
+                display: none;
+            }
+            #midbarelements ul li:hover #submenu1{
+                display:block;
+                position: absolute;
+                background-color: white;
+                padding-top:20px;
+                width: 120%;
+            }
+            #midbarelements ul li:hover #submenu1 ul{
+                display:flex;
+                margin-left: -187px;
+            }
+            #midbarelements ul li:hover #submenu1 ul li{
+                margin: 35px 20px 20px 0px;
+                padding-left: 0px;
+            }
+            #RedmiPhone{
+                display: none;
+            }
+            #midbarelements ul li:hover #RedmiPhone{
+                display:flex;
+                width: 100%;
+                position: absolute;
+                background-color: white;
+                 padding-top:20px;
+            }
+            
+            #midbarelements ul li:hover #RedmiPhone ul{
+                display:flex;
+                margin-left: -300px;
+            }
+            #midbarelements ul li:hover #RedmiPhone ul li{
+                margin: 35px 40px 20px 40px;
+                padding-left: 0px;
+            }
+            #fitness{
+                display: none;
+            }
+            #midbarelements ul li:hover #fitness{
+                display:block;
+                width: 780px;
+                position: absolute;
+                background-color: white;
+                 padding-top:20px;
+            }
+            
+            #midbarelements ul li:hover #fitness ul{
+                display:flex;
+                margin-left: -580px;
+            }
+            #midbarelements ul li:hover #fitness ul li{
+                margin: 35px 60px 20px 60px;
+                padding-left: 0px;
+            }
+            #Home{
+                display: none;
+            }
+            #midbarelements ul li:hover #Home{
+                display:flex;
+                position: absolute;
+                background-color: white;
+                margin-top:0px;
+            }
+            
+            #midbarelements ul li:hover #Home ul{
+                display:flex;
+                margin-left: -700px;
+            }
+            #midbarelements ul li:hover #Home ul li{
+                margin: 35px 60px 20px 50px;
+                padding-left: 0px;
+            }
+            #mitv{
+                display: none;
+            }
+            #midbarelements ul li:hover #mitv{
+                display:block;
+                width: 100%;
+                position: absolute;
+                background-color: white;
+                 padding-top:20px;
+            }
+            
+            #midbarelements ul li:hover #mitv ul{
+                display:flex;
+                margin-left: -420px;
+            }
+            #midbarelements ul li:hover #mitv ul li{
+                margin: 35px 50px 20px 60px;
+                padding-left: 0px;
+            }
+            #Home{
+                display: none;
+            }
+            #midbarelements ul li:hover #Home{
+               display:flex;
+                width: 650px;
+                position: absolute;
+                background-color: white;
+                 padding-top:20px;
+            }
+            
+            #midbarelements ul li:hover #Home ul{
+                display:flex;
+                margin-left: -700px;
+            }
+            #midbarelements ul li:hover #Home ul li{
+                margin: 35px 50px 20px 60px;
+                padding-left: 0px;
+            }
+            #laptops{
+                display: none;
+            }
+            #midbarelements ul li:hover #laptops{
+               display:block;
+                width: 860px;
+                position: absolute;
+                background-color: white;
+                 padding-top:20px;
+            }
+            
+            #midbarelements ul li:hover #laptops ul{
+                display:flex;
+                margin-left: -500px;
+            }
+            #midbarelements ul li:hover #laptops ul li{
+                margin: 35px 40px 20px 40px;
+                padding-left: 0px;
+            }
+            #audio{
+                display: none;
+            }
+            #midbarelements ul li:hover #audio{
+               display:flex;
+                width: 500px;
+                position: absolute;
+                background-color: white;
+                 padding-top:20px;
+            }
+            
+            #midbarelements ul li:hover #audio ul{
+                display:flex;
+                margin-left: -750px;
+            }
+            #midbarelements ul li:hover #audio ul li{
+                margin: 35px 60px 20px 50px;
+                padding-left: 0px;
+            }
+            #accesories{
+                display: none;
+                
+            }
+            #midbarelements ul li:hover #accesories{
+                display:flex;
+                width: 520px;
+                position: absolute;
+                background-color: white;
+                 padding-top:20px;
+            }
+            
+            #midbarelements ul li:hover #accesories ul{
+                display:flex;
+                margin-left: -850px;; 
+            }
+            #midbarelements ul li:hover #accesories ul li{
+                margin: 35px 60px 20px 60px;
+                padding-left: 0px;
+            }
+            .cost{
+                text-decoration: none;
+                color:orangered;
+                font-size: 120%;
+            }
+            .name{
+                text-align: center;
+                margin-left: -5px;
+                text-decoration:none !important;
+                color: gray !important;
+                font-size:120%;
+            }
+            .shoes{
+                margin-left: 30px !important;
+            }
+            .shoeimg{
+                padding-top: 50px;
+            }
+            .smartbandimg{
+                padding-top: 40px;
+            }
+            #p1{
+                padding-top: 10px;
+                padding-bottom: 15px;
+            }
+            .p2{
+                padding-bottom: 15px;
+            }
+            .p3{
+                padding-top: 10px;
+            }
+            .redmiphone{
+                padding-left: 20px;
+            }
+            .lappy{
+                padding-top: 10px;
+                padding-bottom:10px;
+            }
+            .mitvs{
+                padding-top: 30px;
+                padding-bottom:10px;
+            }
+            .mistick{
+                margin-left: -18px;
+            }
+            .mimix{
+                padding-top:25px;
+            }
+            #view{
+                position: relative;
+                left: -60px;
+                top: 40px;
+            }
+            #view1{
+                position: relative;
+                left: -50px;
+                top: 30px;
+            }
+            #view2{
+                position: relative;
+                left: -60px;
+                top: 40px;
+            }
+            #view3{
+                position: relative;
+                left: -60px;
+                top: 40px;
+                width: 120%;
+            }
+            #view4{
+                position: relative;
+                left: -60px;
+                top: 40px;
+                width: 120%;
+            }
+            #view5{
+                position: relative;
+                left: -60px;
+                top: 40px;
+                width: 120%;
+            }
+            .price{
+                position: absolute;
+                top:600px;
+                left: 270px;
+                color: grey;
+            }
+            #from{
+                font-size: 80%;
+                margin-right: 30px;
+            }
+            #features{
+                position: absolute;
+                top:737px;
+                left: 350px;
+            }
+            #f2 {
+                position: absolute;
+                margin-top: 50px;
+                left: 350px;
+                color: white;
+                font-weight: normal;
+            }
+            #perform{
+                position: absolute;
+                left: 350px;
+                margin-top: 140px;
+                color: white;
+                font-weight: normal;
+            }
+            #info{
+                position: absolute;
+                left: 350px;
+                margin-top: 240px;
+                color: white;
+                font-weight:normal;
+            }
+            .games{
+                position: absolute;
+                left: 350px;
+                margin-top: 40px;
+                color: white;
+                font-weight:normal;
+            }
+            .infogames{
+                position: absolute;
+                left: 350px;
+                margin-top: 80px;
+                color: white;
+                letter-spacing: normal;
+            }
+            #c1{
+                position: absolute;
+                left: 354px;
+                margin-top: 350px;
+            }
+            #c2{
+                position: absolute;
+                left: 354px;
+                margin-top: 420px;
+            }
+            #ad{
+                position: absolute;
+                left: 407px;
+                margin-top: 350px;
+                color: white;
+                font-size: 68%;
+            }
+            #de{
+                position: absolute;
+                left: 407px;
+                margin-top: 420px;
+                color: white;
+                font-size: 68%;
+            }
+            .details{
+                position: absolute;
+                left: 735px;
+                margin-top: 215px;
+                color: white;
+                font-size: 80%;
+            }
+            .details1{
+                position: absolute;
+                left: 735px;
+                margin-top: 265px;
+                color: white;
+                font-size: 80%;
+            }
+            .details2{
+                position: absolute;
+                left: 735px;
+                margin-top: 340px;
+                color: white;
+                font-size: 80%;
+            }
+            #zoom{
+                position: absolute;
+                left: 750px;
+                margin-top: 200px;
+                color: white;
+            }
+            #iframe1{
+                position: absolute;
+                left: 350px;
+                margin-top: 150px;
+                width:700px;
+                height: 400px;
+                border-radius: 10px;
+                border-color: yellow;  
+            }
+            #vdotxt1{
+                position: absolute;
+                left: 350px;
+                margin-top: 40px;
+                color: white;
+            }
+            #vdotxt2{
+                position: absolute;
+                left: 350px;
+                margin-top: 100px;
+                color: white;
+            }
+            #lastpic{
+                position: absolute;
+                left: 350px;
+                margin-top: 660px;
+                width:600px;
+                height: 300px;
+            }
+            #imgtxt{
+                position: absolute;
+                left: 350px;
+                margin-top: -410px;
+                color: white;
+            }
+            #imgtxt1{
+                position: absolute;
+                left: 350px;
+                margin-top: -370px;
+                color: white;
+            }
+            #bar4{
+                padding: 50px 20px 20px 40px;
+                color: grey;
+                background-color: ghostwhite;
+                height: 700px;
+            }
+            #bar5{
+                background-color: white;
+                width: 100%;
+                height: 70px;
+                float:left;
+                font-size: 80%;
+                font-weight: bold;
+            }
+            #bar5 a{
+                text-decoration: none;
+                color: darkgrey;
+            }
+            #bar5 a:hover{
+                color: black;
+            }
+            #pic1{
+                margin:10px 40px 10px 50px;
+                float: left;
+            }
+            #pictxt1{
+                float: left;
+                padding-top: 15px;
+                padding-right: 0px;
+                margin-right: 0px;
+            }
+            #bar51{
+                width: 420px;
+                height: 75px;
+                float: left;
+                padding-right: 0px;
+                margin-right: 0px;
+            }
+            #pictxt2{
+                float: left;
+                margin: -20px 0px 2px 0px;
+                padding-right: 0px;
+                margin-right: 0px;
+            }
+            #bar6{
+                width: 100%;
+                height: 90px;
+                background-color: #F5F5F5;
+                float:left;
+                padding: 30px 10px 0px 40px;
+                margin-right: -10px;
+            }
+            #updates{
+                margin-top: -10px;
+                font-size: 80%;
+                margin-right: -10px;
+            }
+            #email{
+                width: 250px;
+                float:left;
+                padding: 3px 10px 3px 15px;
+                height: 40px;
+                border: 1px solid darkgray;
+                margin-top: -59px;
+                font-size: 80%;
+                margin-left: 250px;
+                color:darkgray;
+                border-right: none;
+            }
+            #submit{
+                width: 40px;
+                float:left;
+                padding: 3px 10px 3px 15px;
+                height: 40px;
+                border: 1px solid darkgray;
+                border-left: none;
+                margin-top: -59px;
+                margin-left: 470px;
+                color:darkgray;
+                background-color: white
+            }
+            #bar61{
+                float: left;
+                width:500px;
+                background-color: #F5F5F5;
+                font-size: 85%;
+                margin-left: 20px;
+                margin-right: 108px;
+            }
+            #fb{
+                width: 270px;
+                float:left;
+                padding: 3px 10px 3px 15px;
+                height: 40px;
+                margin-top: -59px;
+                font-size: 80%;
+                margin-left: 150px;
+            }
+            #bar62{
+                float: left;
+                width:470px;
+                background-color: #F5F5F5;
+                font-size: 85%;
+                margin-left: 80px;
+            }
+            #lastbar{
+                float: left;
+                background-color:#212121;
+                width: 100%;
+                color:darkgray;
+                padding: 60px 0px 0px 60px;
+                font-size: 80%;
+            }
+            #lastbar ul{
+                list-style-type: none;
+                margin-left: -39px;
+                
+            }
+            #lastbar ul li{
+                padding-bottom: 15px;
+            }
+            #lastbar h6{
+                padding-bottom: 18px;
+            }
+            #list1{
+                float: left;
+                margin-right: 40px;
+            }
+            #list2{
+                float: left;
+                margin-right: 40px;
+                
+            }
+            #list3{
+                float: left;
+                margin-right: 40px;
+            }
+            #list4{
+                float: left;
+                margin-right: 60px;
+            }
+            #list5{
+                float: left;
+                margin-right: 60px;
+            }
+            #list6{
+                float: left;
+                margin-right: 40px;
+            }
+            #lastbar a{
+                text-decoration: none;
+                color: darkgray;
+            }
+            #lastbar a:hover{
+                color: white;
+            }
+            #chat{
+                padding: 10px;
+                color: white;
+                border: 1px solid white;
+                background-color: #212121;
+                width: 180px;
+            }
+            #chat:hover{
+                background-color: white;
+                color: black;
+            }
+            #bar3{
+                width: 100%;
+                height:60px;
+                background-color: #F5F5F5;
+                padding-top: 15px;
+                padding-bottom: -5px; 
+            }
+            .sticky {
+                  position: fixed;
+                  top: 0;
+                  width: 100%;
+                }
+            #bar3 ul{
+                display: flex;
+                list-style: none;
+                float: left;
+            }
+            #title{
+                margin:0px 430px 0px 30px;
+                font-weight: normal;
+                font-size: 160%;
+            }
+            #st{
+                font-size: 80%;
+                color:gray;
+                padding-right: 20px;
+            }
+            #bar3 ul li a{
+                text-decoration: none;
+                color: black;
+                font-size: 80%;
+                padding-right: 20px;
+                padding-left: 12px;
+            }
+            #buy{
+                border: none;
+                background-color: #F95B07;
+                color: white;
+                font-size: 75%;
+                padding: 5px;
+                width: 140%;
+            }
+        </style>
+        <title>Redmi K20 Pro</title>
+        <link rel="icon" href="milogo.PNG" type="image/png">
+  </head>
+  <body>
+      
+      
+      
+        <div id="topbar"> 
+            <div id="topelements">
+                <ul>
+                    <div id="topelements1">
+                        <li><a href="https://www.mi.com/in/">MI INDIA</a></li>
+                        <li><a href="https://www.mi.com/in/appdownload/">GET MI STORE APP</a></li>
+                        <li><a href="https://www.mi.com/in/service/help/#category_id=1&pagenum=1&channel=1">ONLINE HELP</a></li>
+                        <li id="retails"><a href="">RETAIL STORE  <i class="fa fa-angle-down aria-hidden=true "></i></a>
+                            <div id="stores">
+                                <ul>
+                                    <li><a href="https://www.mi.com/in/service/mihome/">MI HOME</a></li>
+                                    <li><a href="https://www.mi.com/in/service/mi_stores/">MI STORES</a></li>
+                                    <li><a href="https://www.mi.com/in/service/authorized_stores/">MI AUTHORISED STORES</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li id="signin"><a href="https://store.mi.com/in/site/login">SIGN IN</a></li>
+                        <li><a href="https://account.xiaomi.com/pass/register?callback=https%3A%2F%2Fstore.mi.com%2Fin%2Flogin%2Fcallback%3Ffollowup%3Dhttps%253A%252F%252Fwww.mi.com%252Fin%26sign%3DNGQyZTY1M2VjNGNjYTc5NzFlZDc1YmY2ZmM2NDFiYWMwNTU5YzUyNQ%2C%2C&sid=i18n_in_pc_pro&_locale=en_IN">SIGN UP</a></li>
+                        <li id="cart"><a href=""><img src="cartimg.PNG">CART(0)</a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+      
+        
+        <div id="midbar">
+            <a href="https://www.mi.com/in/index.html"><img id="milogo"src="milogo.PNG"></a>
+            <div id="midbarelements">
+                <ul>
+                    <li><a href="">Mi Phones</a>
+                        <div id="submenu1">
+                            <ul>
+                                <li id="mimix"><a href="https://www.mi.com/in/mi-10/"><img id="p1" src="mi10.png"><h4 class="name">Mi 10</h4><span class="cost">From Rs. 49,999</span></a></li>
+                                <li><a href="https://in.event.mi.com/in/mi-mix-alpha"><img src="mimix.png"><h5 class="name">Mi Mix Alpha</h5></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="">Redmi Phones</a>
+                        <div id="RedmiPhone">
+                            <ul>
+                                <li><a href="https://www.mi.com/in/redmi-note-9-pro-max/"><img class="p2" src="mi1.png"><h6 class="name">Redmi Note 9 Pro Max</h6><span class="redmiphone cost">From Rs. 16,999</span></a></li>
+                                <li><a href=""><img class="p2"  src="mi2.png"><h6 class="name">Redmi Note 9 Pro</h6><span class="redmiphone cost">From Rs. 13,999</span></a></li>
+                                <li id="mimix"><a href="https://www.mi.com/in/redmi-note-9/"><img class="p2"  src="mi3.png"><h6 class="name">Redmi Note 9 </h6><span class="redmiphone cost">From Rs. 11,999</span></a></li>
+                                <li><a href="https://www.mi.com/in/redmi-9-prime/"><img class="p2" src="mi4.png"><h6 class="name">Redmi  9 Prime</h6><span class="redmiphone cost">From Rs. 9,999</span></a></li>
+                                <li><a href="https://www.mi.com/in/redmi-9/"><img class="p2 p3" src="mi5.png"><h6 class="name">Redmi  9 </h6><span class="redmiphone cost">Rs. 8,999</span></a></li>
+                                <li id="view"><a href="https://www.mi.com/in/list"><i class="fa fa-arrow-circle-o-right aria-hidden= true fa-5x"></i><br>View More</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="">Mi TV</a>
+                        <div id="mitv">
+                            <ul>
+                                <li id="mimix"><a href="https://www.mi.com/in/mi-tv-4x-65/"><img class="mitvs" src="tv1.png"><h6 class="name">Mi TV 4 X(65)</h6><span class="cost">From Rs. 54,999</span></a></li>
+                                <li><a href="https://www.mi.com/in/mi-tv-4x-55/"><img class="mitvs" src="tv2.png"><h6 class="name">Mi TV 4 X(55)</h6><span class="cost">From Rs. 34,999</span></a></li>
+                                <li id="mimix"><a href="https://www.mi.com/in/mi-tv-4a-43-horizon/"><img class="mitvs" src="tv3.png"><h6 class="name">Mi TV 4 X(50)</h6><span class="cost">From Rs. 22,999</span></a></li>
+                                <li><a href="https://www.mi.com/in/mi-tv-4a-32-horizon/"><img class="mitvs" src="tv4.png"><h6 class="name">Mi TV Box</h6><span class="cost"> Rs.  13,499</span></a></li>
+                                <li><a href="https://www.mi.com/in/mi-tv-stick/"><img  src="tv5.png"><h6 class="name mistick">Mi Stick</h6><span class="cost mistick">Rs.  2,749</span></a></li>
+                                <li id="view1"><a href="https://www.mi.com/in/all-mi-tv"><i class="fa fa-arrow-circle-o-right aria-hidden= true fa-5x"></i><br>View More</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="">Laptops</a>
+                        <div id="laptops">
+                            <ul>
+                                <li id="mimix"><a href="https://www.mi.com/in/mi-notebook-14-horizon/"><img class="lappy" src="l1.png"><h5 class="name">Mi NoteBook 14 <br> Horizon</h5><span class="cost">From Rs. 54,999</span></a></li>
+                                <li><a href="https://www.mi.com/in/mi-notebook-14/"><img class="lappy" src="l2.png"><h5 class="name">Mi NoteBook 14</h5><span class="cost">From Rs. 43,999</span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="">Fitness & <br>Lifestyle</a>
+                        <div id="fitness">
+                            <ul>
+                                <li id="mimix"><a href="https://www.mi.com/in/mi-smart-band-4/"><img class="smartbandimg" src="1.PNG"><h5 class="name">Mi Smart Band 410</h5><span class="cost">From Rs. 2,299</span></a></li>
+                                <li><a href="https://store.mi.com/in/item/3194600013"><img src="2.PNG"><h5 class="name">Mi Smart Band 3i</h5></a><span class="cost">From Rs. 1,299</span></li>
+                                <li id="mimix"><a href="https://store.mi.com/in/item/3203200014"><img src="3.PNG"><h5 class="name">Mi Beard Treamer</h5><span class="cost">From Rs.999</span></a></li>
+                                <li><a href="https://www.mi.com/in/shoes"><img class="shoeimg"src="4.PNG"><h5 class="name">Mi Shoes</h5></a><span class="cost shoes">From Rs. 2,999</span></li>
+                                <li id="view2"><a href="https://www.mi.com/in/lifestyle"><i class="fa fa-arrow-circle-o-right aria-hidden= true fa-5x"></i><br>View More</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="">Home</a>
+                        <div id="Home">
+                            <ul>
+                                <li ><a href="https://store.mi.com/in/item/3194500021"><img src="H1.PNG"><h5 class="name">Mi Air Purifier 3</h5><span class="cost"> Rs. 10,999</span></a></li>
+                                <li><a href="https://store.mi.com/in/item/3194100034"><img src="H2.PNG"><h5 class="name">Mi Air Purifier 2C</h5><span class="cost"> Rs.6,999</span></a></li>
+                                 <li><a href="https://www.mi.com/in/mi-smart-water-purifier/"><img src="H3.PNG"><h5 class="name">Mi Smart Water Purifier</h5><span class="cost">From Rs. 12,999</span></a></li>
+                                <li><a href="https://www.mi.com/in/security-cameras"><img src="H4.PNG"><h5 class="name">Mi Security  Cameras</h5><span class="cost">From Rs. 1,799</span></a></li>
+                                <li><a href="https://www.mi.com/in/mi-led-smart-bulb/"><img src="H4.PNG"><h5 class="name">Mi Smart Wi-Fi Bulb</h5><span class="cost">From Rs. 1,299</span></a></li>
+                                <li id="view3"><a href="https://www.mi.com/in/home"><i class="fa fa-arrow-circle-o-right aria-hidden= true fa-5x"></i><br>View More</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="">Audio</a>
+                        <div id="audio">
+                            <ul>
+                                <li id="mimix"><a href="https://www.mi.com/in/mi-true-wireless-earphones-2/"><img src="a1.PNG"><h5 class="name">Mi True Wireless <br>Earphones 2</h5><span class="cost">Rs. 3,999</span></a></li>
+                                <li><a href="https://store.mi.com/in/item/3202100010"><img class="mimix" src="a2.PNG"><h5 class="name">Redmi Earbuds S</h5><span class="cost">Rs. 1,799</span></a></li>
+                                <li id="mimix"><a href="https://store.mi.com/in/item/3192800007"><img src="a3.PNG"><h5 class="name">Mi Neckband Bluetooth<br>Earphones</h5><span class="cost">Rs. 1,599</span></a></li>
+                                <li><a href="https://store.mi.com/in/item/3203500001"><img class="mimix"  src="a4.PNG"><h5 class="name">Mi Earphones Basic</h5><span class="cost">Rs. 399</span></a></li>
+                                <li id="mimix"><a href="https://store.mi.com/in/item/3192800005"><img src="a5.PNG"><h5 class="name">Mi Super Bass <br>Wireless Headphones</h5><span class="cost">Rs. 1,799</span></a></li>
+                                <li id="view4"><a href="https://www.mi.com/in/audio"><i class="fa fa-arrow-circle-o-right aria-hidden= true fa-5x"></i><br>View More</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a id="acc" href="">Accesories</a>
+                        <div id="accesories">
+                            <ul>
+                                <li id="mimix"><a href="https://www.mi.com/in/power-banks"><img src="e1.PNG"><h5 class="name">Power Bank</h5><span class="cost">Rs. 799</span></a></li>
+                                <li><a href="https://store.mi.com/in/item/3184300009"><img src="e2.PNG"><h5 class="name">Mi Router 4C</h5><span class="cost">Rs. 1,099</span></a></li>
+                                <li id="mimix"><a href="https://store.mi.com/in/item/3200200007"><img src="e3.PNG"><h5 class="name">Mi portable Wireless<br> Mouse</h5><span class="cost">Rs. 499</span></a></li>
+                                <li><a href="https://www.mi.com/in/chargers-cables"><img src="e4.PNG"><h5 class="name">Charger and Cables</h5><span class="cost">Rs. 179</span></a></li>
+                                <li id="mimix"><a href="https://www.mi.com/in/cases-protectors"><img src="e5.PNG"><h5 class="name">Cases and Protectors</h5><span class="cost">Rs. 49</span></a></li>
+                                <li id="view5"><a href="https://www.mi.com/in/products"><i class="fa fa-arrow-circle-o-right aria-hidden= true fa-5x"></i><br>View More</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <input class="search" type="search" placeholder="Search Products">
+                <si id="magnify" class="fa fa-search" aria-hidden="true"></i>
+            </div>
+        </div> 
+      
+      
+        <nav id="bar3">   
+            <ul> 
+                    <li><h3 id="title">Redmi K20 Pro</h3></li>
+                    <li><span id="st"class="features" href="">Overview</span></li>
+                    <li><a class="features1" href="https://www.mi.com/in/redmi-k20-pro/specs">Specs</a></li>
+                    <li><a class="features1" href="https://www.mi.com/in/redmi-k20-pro/design">Design</a></li>
+                    <li><a class="features1" href="https://www.mi.com/in/redmi-k20-pro/gallery">Gallery</a></li>
+                    <li><a class="features1" href="https://www.mi.com/in/redmi-k20-pro/faq">FAQs</a></li>
+                    <li><a class="features1" href="https://www.mi.com/in/redmi-k20-pro/review">Review</a></li>
+                    <li><a class="features1" href="https://store.mi.com/in/fcode">F-code</a></li>
+                    <li><input id="buy" class="features1" type="button"  onclick="window.location.href='https://www.mi.com/in/buy/product/redmi-k20-pro';" value="Buy Now"></li>
+            </ul>
+        </nav>
+      
+      
+        <div clss="jumbotron">
+            <img width="100%" src="pic1.jpg">
+            <h4 class="price"><span id="from">From</span> Rs. 24,999</h4>
+            <img id="features" src="feat.PNG">
+            <h4 id="f2">Qualcomm® Snapdragon™ 855</h4>
+            <h5 id="perform">Power in performance</h5>
+            <h5 id="info">The Qualcomm® Snapdragon™ 855 is built on 7nm process technology<br>which makes it a blazing fast processor with incredible power efficiency for all your pursuits</h5>
+            <img width="100%" src="pic2.jpg">
+            <h4 class="games">Game Turbo 2.0</h4>
+            <h6 class="infogames">Flagship hardware and software come together<br>
+            to deliver the ultimate mobile gaming experience.<br>
+            The Game Turbo mode reduces network delay<br>
+            and optimises touch latency to deliver the most<br>
+            immersive gaming experience for every hardcore gamer.</h6>
+            <img id="c1" src="Capture.PNG">
+            <p id="ad">Adreno™ 640</p>
+            <p id="de">Display enhancements</p>
+            <img id="c2" src="Capture1.PNG">
+            <img width="100%" src="pic3.jpg"> 
+            <h4 class="games">48MP AI Triple Rear camera</h4>
+            <h6 class="infogames">The formidable combination of a 48MP Sony IMX586 ultra high-resolution sensor, a 13MP 124.8° FOV ultra-wide angle camera and a third 8MP telephoto camera delivers crystal clear pictures no matter what the scene. You can zoom effortlessly from 0.6x to 2x to capture a far off subject.</h6>
+            <p class="details">8MP Telephoto camera </p>
+            <p class="details1">48MP Sony IMX586 sensor camera </p>
+            <p class="details2">13MP Ultra-wide angle camera</p>
+            <img width="100%" src="pic4.jpg">
+            <h5 id="f2">Spectra 380 ISP with Computer vision built into the hardware for an incredible camera performance.</h5>
+            <h6 id="zoom">48MP Zoomed-In</h6>
+            <img width="100%" src="pic5.jpg">
+            <h4 id="vdotxt1">Ultra-wide landscape shots</h4>
+            <h6 id="vdotxt2">124.8° wide-angle shots with AI Scene correction to prevent distortion in ultra-wide shots.</h6>
+            <img width="100%" height="170%" src="bg.jpg">
+            <iframe id="iframe1" src="vdo1.mp4"></iframe>
+            <h4 id="imgtxt">8MP Telephoto lens</h4>
+            <h6 id="imgtxt1">Zoom in from 0.6x to 2x to capture your subject.</h6>
+            <img id="lastpic" src="pic6.webp">
+            
+        </div>
+      
+        <div id="bar4">
+            <p>The Redmi K20 Pro is the Alpha Flagship you have been waiting for.</p>
+            <p>The Redmi K20 Pro justifies the flagship title with its         unmatched specs. Armoured with Qualcomm® Snapdragon™ 855 and Adreno™ 640, this smartphone is sure to impress any hardcore gamer. Amateur photography gets a major upgrade with the 48MP + 13MP + 8MP Triple AI Rear camera for sharply detailed and richly coloured photos. Style takes the forefront with the Aura Prime Design that comes in 3 striking colours – Glacier Blue, Flame Red and Carbon Black.</p>
+            <p>Redmi K20 Pro Features:<br><br>
+                <br>- The 48MP primary camera features a Sony IMX586 sensor for crystal clear pictures
+               <br> - The 13MP rear camera allows you to capture ultra-wide portraits with ease
+               <br> - The third 8MP telephoto camera allows you to zoom effortlessly when you need to capture a subject far away
+                <br>- The Horizon AMOLED Display breaks away from the notch to give you the complete view
+                <br>- 4000mAh high-capacity battery will keep you going through the day
+                <br>- Gameplay is responsive and lifelike with the ultra-fast Qualcomm® Snapdragon™ 855
+                <br>- Aura Prime Design makes it the accessory to sport
+            </p>
+            <p>Believe the hype, the Alpha is here!<br> 
+                *Please note that all functions, features, specs and any other product information provided on any Xiaomi and subsidiary platform, including but not limited to, benefits, design, pricing, components, performance, availability and capabilities describing the product are subject to change and changed by the company when deemed necessary without any notice or obligation.</p>
+      
+        </div>
+        
+        <div id="bar5">
+            <div id="bar51">
+                <a href=""><img id="pic1" src="replace.PNG"></a>
+                <p id="pictxt1">Hassle-free replacement</p>
+                <br>
+                <a id="pictxt2" href=""><p>10-days easy replacement policy on mi.com</p></a>
+            </div>
+            <div id="bar51">
+                <a href=""><img id="pic1" src="replace2.PNG"></a>
+                <p id="pictxt1">100% secure payment</p>
+                <br>
+                <a id="pictxt2" href=""><p>We support cards, wallet, emi and COD.</p></a>
+            </div>
+            <div id="bar51">
+                <a href=""><img id="pic1" src="replace3.PNG"></a>
+                <p id="pictxt1">Vast service network</p>
+                <br>
+                <a id="pictxt2" href=""><p>1000 Mi service-centers across 600 cities</p></a>
+            </div>
+        </div>
+      
+      
+        <div id="bar6">
+            <div id="bar61">
+                <h5>LET'S STAY IN TOUCH</h5>
+                <P id="updates">Get updates on sales specials and more</P>
+                <input id="email" type="email" placeholder="Enter Email Address">
+                <button id="submit" type="submit">></button>
+            </div>
+            <div id="bar62">
+                <h5 id="follow">FOLLOW MI</h5>
+                <P id="updates">We want to hear from you</P>
+                <a href=""><img id="fb" src="fb.PNG"></a>
+            </div>
+       </div>
+      
+      
+        <div id="lastbar">
+            <div id="list1">
+                <h6>SUPPORT</h6>
+                <ul>
+                    <li><a href="https://www.mi.com/in/service/help/#category_id=1&pagenum=1&channel=1">Online Help</a></li>
+                    <li><a href="https://www.mi.com/in/service/">Customer Service</a></li>
+                    <li><a href="https://www.mi.com/in/service/shipping/">Shipping FAQ</a></li>
+                    <li><a href="https://www.mi.com/in/service/repair/">Service Centres</a></li>
+                    <li><a href="https://www.mi.com/in/service/warranty/">Warranty</a></li>
+                    <li><a href="https://www.mi.com/in/bulkbuy/">Bulk Orders</a></li>
+                    <li><a href="https://www.mi.com/in/service/userguide/">User Guide</a></li>
+                    <li><a href="https://www.mi.com/in/service/support/laptop-drivers.html">Laptop Drivers</a></li>
+                    <li><a href="https://www.mi.com/in/miexchange/">Mi Exchange</a></li>
+                    <li><a href="https://www.mi.com/in/service/miphoneprotection/#miscreenprotect">Mi Phone Protection</a></li>
+                    <li><a href="https://www.mi.com/in/service/miextendedwarranty/">Mi Extended Warranty</a></li>
+                </ul>
+            </div>
+            <div id="list2">
+                <h6>SHOP AND LEARN</h6>
+                <ul>
+                    <li><a href="https://in.event.mi.com/in/mi-mix-alpha">Mi 10</a> / <a href="https://in.event.mi.com/in/mi-mix-alpha">i MIX Alpha</a></li>
+                    <li><a href="https://www.mi.com/in/redmi-8/">Redmi 8</a> / <a href="https://www.mi.com/in/redmi-9/">Redmi 9</a> / <a href="https://www.mi.com/in/redmi-9-prime/">Redmi 9<br><br> Prime</a></li>            
+                    <li><a href="https://www.mi.com/in/redmi-8a-dual/">Redmi 8A Dual</a></li>
+                    <li><a href="https://www.mi.com/in/redmi-note-8/">Redmi Note 8</a> / <a href="https://www.mi.com/in/redmi-note-8-pro/"> Redmi Note 8<br><br> Pro</a></li>
+                    <li><a href="https://www.mi.com/in/redmi-k20/">Redmi K20</a> / <a href="https://www.mi.com/in/redmi-k20-pro/"> Redmi K20 Pro</a></li>
+                    <li><a href="https://www.mi.com/in/redmi-note-9-pro/">Redmi Note 9 Pro</a> / <a href="https://www.mi.com/in/redmi-note-9/"> Redmi <br><br>Note 9</a> / <a href="https://www.mi.com/in/redmi-note-9-pro-max/"> Redmi Note 9 Pro Max</a></li>
+                    <li><a href="https://www.mi.com/in/all-mi-tv">TVs</a> /<a href="https://www.mi.com/in/xiaomi-laptops"> laptops</a></li>
+                </ul>
+            </div>
+            <div id="list3">
+                <h6>RETAIL STORE</h6>
+                <ul>
+                    <li><a href="https://www.mi.com/in/service/mihome/">Mi Home</a></li>
+                    <li><a href="https://www.mi.com/in/service/authorized_stores/">Mi Authorised Stores</a></li>
+                </ul>
+            </div>
+            <div id="list4">
+                <h6>ABOUT US</h6>
+                <ul>
+                    <li><a href="https://www.mi.com/in/about/">Xiaomi</a></li>
+                    <li><a href="https://www.mi.com/in/mediakit/">Mediakit</a></li>            
+                    <li><a href="https://www.mi.com/in/about/#culture">Culture</a></li>
+                    <li><a href="https://www.mi.com/in/about/agreement/">User Agreement</a></li>
+                    <li><a href="https://www.mi.com/in/about/privacy/">Privacy Policy</a></li>
+                    <li><a href="https://www.mi.com/in/service/support/mideclare.html">Declarations</a></li>
+                    <li><a href="https://integrity.mi.com/global">Integrity & Compliance</a></li>
+                    <li><a href="https://www.mi.com/in/smartphone-quality/">Smartphone Quality</a></li>
+                    <li><a href="https://www.mi.com/in/tv-quality/">TV Quality</a></li>            
+                    <li><a href="https://www.mi.com/in/service-quality/">Service Quality</a></li>
+                    <li><a href="https://www.mi.com/in/service/support/ewastetakeback.html">Environment</a></li>
+                    <li><a href="https://www.mi.com/in/sitemap">Sitemap</a></li>
+                </ul>
+            </div>
+            <div id="list5">
+                <h6>CONTACT US</h6>
+                <ul>
+                    <li><a href="service.in@xiaomi.com">Email</a></li>
+                    <li><a href="https://www.mi.com/in/about/#career">Careers</a></li>
+                </ul>
+            </div>
+            <div id="list6">
+                <p>Service hours: 9AM-9PM</p>
+                <button id="chat" type="button" data-target="https://in.chat.kefu.mi.com/page/index/v2?tag=in&token=aW4jNTAwMCNpbi53ZWIubWkjd2Vic2l0ZSNnb29kc0RldGFpbA==&groupId=P0&locale=en&closedshow=1">CHAT SUPPORT</button>
+            </div>
+        </div>
+
+      
+        
+      
+  </body>
+    
+</html>
